@@ -1,0 +1,20 @@
+header {
+  @include container;
+  @include ptop-3;
+  @include pbottom-3;
+  background-color: #1e1e1e;
+  color: $w;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    gap: $s6;
+    align-items: center;
+    ul {
+      display: flex;
+      gap: $s4;
+      li {
+        @include link-text;
+      }
+    }
+  }
+}
