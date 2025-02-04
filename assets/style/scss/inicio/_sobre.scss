@@ -1,0 +1,42 @@
+.inicio-sobre-bg {
+  background-color: $w1;
+  @include ptop-9;
+  @include pbottom-9;
+}
+
+.inicio-sobre {
+  @include container;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $s5;
+  align-items: center;
+  .img-container {
+    position: relative;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &::after {
+      content: "";
+      background: url("../../img/inicio/decorador.svg");
+      background-size: cover;
+      display: block;
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      bottom: -30px;
+      right: -30px;
+    }
+  }
+  h2 {
+    @include title-2;
+    @include mbottom-4;
+  }
+  p {
+    @include text-1;
+    @include mbottom-4;
+  }
+  a {
+    @include link-box;
+  }
+}

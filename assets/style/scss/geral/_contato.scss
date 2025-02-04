@@ -1,0 +1,21 @@
+.contato {
+  @include container;
+  @include ptop-9;
+  @include pbottom-9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $s5;
+  h2 {
+    @include title-2;
+  }
+  p {
+    @include text-1;
+    @include mbottom-4;
+  }
+  a {
+    @include link-box;
+    display: flex;
+    align-items: center;
+    gap: $s3;
+  }
+}

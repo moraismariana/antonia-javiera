@@ -18,7 +18,7 @@
 
 <body>
     <div class="inicio-introducao-bg">
-        <header>
+        <header class="header">
             <nav>
                 <img src="./assets/img/geral/logo-header.svg" alt="Antonia Javiera Logo" width="120" height="52">
                 <ul>
@@ -30,46 +30,53 @@
             </nav>
         </header>
 
-        <article>
+        <article class="inicio-introducao">
             <h1>Antonia Javiera</h1>
             <p>Literatura, Música e a beleza da Língua Espanhola</p>
         </article>
     </div>
 
-    <section>
-        <div>
-            <h2>Conheça a professora</h2>
-            <p>Antonia Javiera é atualmente professora na UFVJM e conta com diversas contribuições na área da Literatura, da Música e do Espanhol.</p>
-            <a href="./sobre">Saiba mais</a>
-        </div>
-        <div>
-            <img src="./assets/img/inicio/Antonia-Javiera.webp" alt="Imagem da professora Antonia sorrindo.">
-        </div>
-    </section>
+    <div class="inicio-sobre-bg">
+        <section class="inicio-sobre">
+            <div>
+                <h2>Conheça a professora</h2>
+                <p>Antonia Javiera é atualmente professora na UFVJM e conta com diversas contribuições na área da Literatura, da Música e do Espanhol.</p>
+                <a href="./sobre">Saiba mais</a>
+            </div>
+            <div class="img-container">
+                <img src="./assets/img/inicio/Antonia-Javiera.webp" alt="Imagem da professora Antonia sorrindo." width="582" height="529">
+            </div>
+        </section>
+    </div>
 
-    <section>
-        <h2>Artigos, projetos e conteúdos</h2>
-        <p>Aqui você consegue encontrar artigos, conteúdos e projetos elaborados pela professora.</p>
-        <a href="./conteudos/">Conferir agora <img src="./assets/img/geral/seta-direita.svg" alt="Seta para a direita"></a>
-    </section>
+    <div class="inicio-conteudos-bg">
+        <section class="inicio-conteudos">
+            <div>
+                <h2>Artigos, projetos e conteúdos</h2>
+                <p>Aqui você consegue encontrar artigos, conteúdos e projetos elaborados pela professora.</p>
+                <a href="./conteudos/">Conferir agora <img src="./assets/img/geral/seta-direita.svg" alt="Seta para a direita"></a>
+            </div>
+        </section>
+    </div>
 
-    <section>
+    <section class="contato">
         <h2>Contato</h2>
         <div>
-            <p>Quer enviar uma mensagem? Entre em contato através do botão abaixo.</p>
+            <p>Quer enviar uma mensagem? <br> Entre em contato através do botão abaixo.</p>
+            <p></p>
             <a href="./">Email <img src="./assets/img/geral/seta-direita.svg" alt="Seta para a direita"></a>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer w1">
         <div>
-            <img src="./assets/img/geral/logo-footer.svg" alt="Antonia Javiera Logo">
-            <div>
+            <img src="./assets/img/geral/logo-footer.svg" alt="Antonia Javiera Logo" width="120" height="52">
+            <div class="footer-links">
                 <ul>
-                    <li>Início</li>
-                    <li>Sobre</li>
-                    <li>Conteúdos</li>
-                    <li>Contato</li>
+                    <li><a href="./">Início</a></li>
+                    <li><a href="./sobre/">Sobre</a></li>
+                    <li><a href="./conteudos/">Conteúdos</a></li>
+                    <li><a href="./">Contato</a></li>
                 </ul>
                 <ul>
                     <li>Telefone</li>
@@ -78,7 +85,9 @@
                 </ul>
             </div>
         </div>
-        <p>Desenvolvido por Mariana Morais © 2025.</p>
+        <div>
+            <p>Desenvolvido por Mariana Morais © 2025.</p>
+        </div>
     </footer>
 </body>
 

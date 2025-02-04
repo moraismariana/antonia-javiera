@@ -1,0 +1,31 @@
+.inicio-conteudos-bg {
+  background: url("../../img/inicio/conteudos-bg.webp");
+  background-size: cover;
+  @include ptop-9;
+  @include pbottom-9;
+}
+
+.inicio-conteudos {
+  @include container;
+  div {
+    @include ptop-7;
+    @include pbottom-7;
+    padding-left: $s6;
+    padding-right: $s6;
+    background-color: $w;
+    h2 {
+      @include title-2;
+      @include mbottom-4;
+    }
+    p {
+      @include text-1;
+      @include mbottom-4;
+    }
+    a {
+      @include link-box;
+      display: flex;
+      align-items: center;
+      gap: $s3;
+    }
+  }
+}
