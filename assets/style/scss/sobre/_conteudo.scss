@@ -1,0 +1,39 @@
+.sobre-conteudo {
+  @include container;
+  h1 {
+    @include mtop-7;
+    @include mbottom-7;
+    @include title-2;
+  }
+  p {
+    @include text-1;
+  }
+}
+
+.sobre-conteudo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $s7 0;
+  align-items: end;
+  grid-template-areas:
+    "a b"
+    "c d";
+  img {
+    width: 100%;
+    height: auto;
+  }
+  & > div:nth-of-type(1) {
+    grid-area: a;
+  }
+  & > div:nth-of-type(2) {
+    grid-area: b;
+    margin-left: $s6;
+  }
+  & > div:nth-of-type(3) {
+    grid-area: d;
+  }
+  & > div:nth-of-type(4) {
+    grid-area: c;
+    margin-right: $s6;
+  }
+}

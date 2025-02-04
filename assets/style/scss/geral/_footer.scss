@@ -5,7 +5,6 @@
     @include pbottom-9;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: $s5;
     .footer-links {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -45,5 +44,8 @@
   }
   &.w1 {
     background-color: $w1;
+  }
+  &.w2 {
+    background-color: $w2;
   }
 }
