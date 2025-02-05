@@ -38,7 +38,9 @@
   &.menu-mobile-ativo {
     z-index: 2;
     position: fixed;
-    top: 0;
+    top: $s3;
+    padding-top: 0;
+    padding-bottom: 0;
     width: 100vw;
     svg {
       path,
