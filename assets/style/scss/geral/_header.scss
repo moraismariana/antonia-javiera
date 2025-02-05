@@ -6,14 +6,19 @@
 
 .header {
   @include container;
-  @include ptop-3;
-  @include pbottom-3;
+  // @include ptop-3;
+  // @include pbottom-3;
   color: $w;
   nav {
     display: flex;
     justify-content: space-between;
     gap: $s5;
     align-items: center;
+    & > a {
+      height: 52px;
+      @include ptop-3;
+      @include pbottom-3;
+    }
     ul {
       display: flex;
       gap: $s4;
@@ -35,7 +40,7 @@
   &.menu-mobile-ativo {
     z-index: 2;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     svg {
       path,
       rect {
@@ -65,7 +70,7 @@
   background-color: $w2;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 1;
   ul {
@@ -75,9 +80,9 @@
   }
   a {
     display: block;
-    @include text-1;
+    @include link-text;
     text-align: center;
-    padding: 10px;
+    padding: $s2;
     color: $c1;
   }
   &.menu-mobile-ativo {
