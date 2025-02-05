@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: $s4;
     h4 {
       @include subtitle-1;
       color: $c2;
@@ -80,5 +81,31 @@
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+// responsividade
+
+.conteudos-artigos-item {
+  @include screen(tablet) {
+    p {
+      display: block;
+      padding-right: $s4;
+    }
+    & > div:nth-of-type(1) {
+      img {
+        display: block;
+      }
+    }
+    &:hover {
+      p {
+        animation: none;
+      }
+      & > div:nth-of-type(1) {
+        img {
+          animation: none;
+        }
+      }
+    }
   }
 }
