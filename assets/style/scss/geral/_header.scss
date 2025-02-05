@@ -37,7 +37,7 @@
   }
   &.menu-mobile-ativo {
     z-index: 2;
-    position: sticky;
+    position: fixed;
     top: env(safe-area-inset-top, 0px);
     width: 100vw;
     svg {
@@ -67,7 +67,7 @@
 .menu-mobile {
   display: none;
   background-color: $w2;
-  position: sticky;
+  position: fixed;
   top: env(safe-area-inset-top, 0px);
   width: 100vw;
   height: 100lvh;
