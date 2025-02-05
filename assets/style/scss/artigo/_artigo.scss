@@ -26,10 +26,25 @@
     @include text-1;
     @include mbottom-5;
   }
+  img {
+    @include align-div;
+    max-width: 100%;
+    height: auto;
+  }
   .artigo-imagem {
     @include mbottom-5;
   }
   .artigo-conteudo {
     @include mbottom-7;
+  }
+}
+
+// responsividade
+
+.artigo {
+  @include screen(tablet) {
+    h1 {
+      @include mbottom-5;
+    }
   }
 }
