@@ -1,7 +1,6 @@
 .header-bg {
   background: url("../../img/inicio/introducao-bg.webp");
   background-size: cover;
-  // background-position: center;
 }
 
 .header {
@@ -14,9 +13,6 @@
     justify-content: space-between;
     gap: $s5;
     align-items: center;
-    & > a {
-      height: 52px;
-    }
     ul {
       display: flex;
       gap: $s4;
@@ -38,7 +34,7 @@
   &.menu-mobile-ativo {
     z-index: 2;
     position: fixed;
-    top: env(safe-area-inset-top, 0px);
+    // top: 0px;
     width: 100vw;
     svg {
       path,
@@ -68,7 +64,7 @@
   display: none;
   background-color: $w2;
   position: fixed;
-  top: env(safe-area-inset-top, 0px);
+  // top: 0;
   width: 100vw;
   height: 100lvh;
   z-index: 1;
