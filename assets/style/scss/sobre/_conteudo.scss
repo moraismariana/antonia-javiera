@@ -37,3 +37,27 @@
     margin-right: $s6;
   }
 }
+
+// responsividade
+
+.sobre-conteudo-grid {
+  @include screen(notebook-s) {
+    & > div:nth-of-type(2) {
+      margin-left: $s5;
+    }
+    & > div:nth-of-type(4) {
+      margin-right: $s5;
+    }
+  }
+  @include screen(tablet) {
+    grid-template-columns: 1fr;
+    gap: $s4;
+    grid-template-areas: "a" "b" "d" "c";
+    & > div:nth-of-type(2) {
+      margin-left: 0;
+    }
+    & > div:nth-of-type(4) {
+      margin-right: 0;
+    }
+  }
+}
