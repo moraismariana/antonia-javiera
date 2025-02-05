@@ -1,6 +1,7 @@
 .inicio-conteudos-bg {
   background: url("../../img/inicio/conteudos-bg.webp");
   background-size: cover;
+  background-position: center;
   @include ptop-9;
   @include pbottom-9;
 }
@@ -26,6 +27,27 @@
       display: flex;
       align-items: center;
       gap: $s3;
+    }
+  }
+}
+
+// responsividade
+
+.inicio-conteudos {
+  @include screen(tablet) {
+    div {
+      padding-right: $s5;
+      padding-left: $s5;
+      @include ptop-7;
+      @include pbottom-7;
+    }
+  }
+  @include screen(mobile) {
+    div {
+      padding-right: $s5;
+      padding-left: $s5;
+      @include ptop-6;
+      @include pbottom-6;
     }
   }
 }

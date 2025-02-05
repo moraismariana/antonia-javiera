@@ -49,3 +49,17 @@
     background-color: $w2;
   }
 }
+
+// responsividade
+
+.footer {
+  @include screen(mobile) {
+    & > div:nth-of-type(1) {
+      grid-template-columns: 1fr;
+      gap: $s6;
+      .footer-links {
+        gap: 0;
+      }
+    }
+  }
+}

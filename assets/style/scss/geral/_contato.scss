@@ -23,3 +23,11 @@
     gap: $s3;
   }
 }
+
+// responsividade
+.contato {
+  @include screen(mobile) {
+    grid-template-columns: 1fr;
+    gap: $s4;
+  }
+}
