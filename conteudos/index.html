@@ -42,7 +42,7 @@
                     <li><a href="../">Início</a></li>
                     <li><a href="../sobre/">Sobre</a></li>
                     <li><a href="../conteudos/">Conteúdos</a></li>
-                    <li><a href="../">Contato</a></li>
+                    <li><a href="../contato/">Contato</a></li>
                 </ul>
                 <div class="menu-mobile-icone">
                     <button>
@@ -61,17 +61,21 @@
                 <li><a href="../">Início</a></li>
                 <li><a href="../sobre/">Sobre</a></li>
                 <li><a href="../conteudos/">Conteúdos</a></li>
-                <li><a href="../">Contato</a></li>
+                <li><a href="../contato/">Contato</a></li>
             </ul>
         </div>
     </div>
 
     <section class="conteudos-conteudo">
         <h1>Artigos, projetos e conteúdos</h1>
+        <form class="conteudos-busca">
+            <input name="busca" id="busca" type="text" v-model="busca" />
+            <button type="submit" id="lupa" value="Buscar" @click.prevent="buscarProdutos"><img src="../assets/img/geral/lupa.svg" alt="Buscar"></button>
+        </form>
         <div class="conteudos-artigos">
             <a href="../artigo/" class="conteudos-artigos-item">
                 <div>
-                    <h4>Apostilas para estudantes</h4>
+                    <h4><img src="../assets/img/geral/pin.svg" alt="Artigo fixado">Apostilas para estudantes</h4>
                     <img src="../assets/img/geral/seta-direita.svg" alt="Seta para a direita">
                 </div>
                 <p>Confira aqui os materiais elaborados para os estudantes. Livros e apostilas sobre literatura e espanhol.</p>
@@ -104,6 +108,19 @@
                 </div>
                 <p>Confira aqui os materiais elaborados para os estudantes. Livros e apostilas sobre literatura e espanhol.</p>
             </a>
+        </div>
+        <div class="conteudos-paginacao">
+            <p>Total de artigos: 5</p>
+            <div>
+                <div>
+                    <img src="../assets/img/geral/seta-esquerda-claro.svg" alt="Seta para a esquerda">
+                    <p>Página anterior</p>
+                </div>
+                <div>
+                    <p>Próxima página</p>
+                    <img src="../assets/img/geral/seta-direita-claro.svg" alt="Seta para a direita">
+                </div>
+            </div>
         </div>
     </section>
 
@@ -115,12 +132,12 @@
                     <li><a href="../">Início</a></li>
                     <li><a href="../sobre/">Sobre</a></li>
                     <li><a href="../conteudos/">Conteúdos</a></li>
-                    <li><a href="../">Contato</a></li>
+                    <li><a href="../contato/">Contato</a></li>
                 </ul>
                 <ul>
                     <li><a href="tel:+5538998082804" target="_blank">Telefone</a></li>
                     <li><a href="https://www.instagram.com/antoniajavieracabreramunoz/" target="_blank">Instagram</a></li>
-                    <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=professoraantonia@gmail.com" target="_blank">Email</a></li>
+                    <li><a href="./contato/">Email</a></li>
                 </ul>
             </div>
         </div>
